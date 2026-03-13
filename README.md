@@ -1,16 +1,40 @@
-## Hi there 👋
+# Hi, I'm Tejas Pravin Raut 👋
 
-<!--
-**TejasRaut15k/TejasRaut15k** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
+I am an Automation and Robotics Engineering student at **JSPM Rajarshi Shahu College of Engineering, Pune, Maharashtra**.
 
-Here are some ideas to get you started:
+I am passionate about **robotics, automation systems, and hardware development**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I am a member of **Team Cipher Robotics Club**, where we participate in the **DD ROBOCON International Competition**, working on innovative robot mechanisms and hardware implementation.
+
+I also work as **Additive Manufacturing Lead at BG Technology**, where I design and 3D print mechanical parts for students and companies.
+
+I believe in discipline and consistent improvement. I dedicate **12+ hours daily to project development** and **2–4 hours to learning robotics and engineering technologies**.
+
+- You may Think there is no one who as a student put this much hour, I genuinely Put that much Hour improvement.
+---
+
+## Technical Interests
+Robotics  
+ROS2  
+Embedded Systems  
+3D Printing  
+Automation  
+
+---
+
+## Tools I Use
+Python  
+C++  
+Fusion 360  
+GitHub  
+Gazebo 
+basic of VS Code (For Ros only)
+
+---
+
+## Current Focus
+Learning ROS2  
+Building robotics projects  
+Improving hardware design and prototyping
+Winnig in This year DD Robocoon India.

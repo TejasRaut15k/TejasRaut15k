@@ -10,31 +10,31 @@ I am a member of **Team Cipher Robotics Club**, where we participate in the **DD
 I also work as **Additive Manufacturing Lead at BG Technology**, where I design and 3D print mechanical parts for students and companies.
 
 I believe in discipline and consistent improvement. I dedicate **12+ hours daily to project development** and **2–4 hours to learning robotics and engineering technologies**.
-
--I don’t claim to be the smartest person in the room, but I try to be one of the hardest working. Most days I spend **12+ hours building projects and working on engineering ideas**, and another **2–4 hours learning new technologies to improve myself .**
+ - I dont claim To be the  Smartest Personn in the Room, But I try to be Hardest working person. I known i can't Put daily that much hours but it consistent hours can be lower or High but its productive Hours
+   
 ---
 
 ## Technical Interests
-Robotics  
-ROS2  
-Embedded Systems  
-3D Printing  
-Automation  
+ -Robotics  
+ -ROS2  
+ -Embedded Systems  
+ -3D Printing  
+ -Automation  
 
 ---
 
 ## Tools I Use
-Python  
-C++  
-Fusion 360  
-GitHub  
-Gazebo 
-basic of VS Code (For Ros only)
+ -Python  
+ -C++  
+ -Fusion 360  
+ -GitHub  
+ -Gazebo 
+ -basic of VS Code (For Ros only)
 
 ---
 
 ## Current Focus
-Learning ROS2  
-Building robotics projects  
-Improving hardware design and prototyping
-Winnig in This year DD Robocoon India.
+ -Learning ROS2  
+ -Building robotics projects  
+ -Improving hardware design and prototyping
+ -Winnig in This year DD Robocoon India.

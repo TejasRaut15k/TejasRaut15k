@@ -10,7 +10,7 @@ I am a member of **Team Cipher Robotics Club**, where we participate in the **DD
 I also work as **Additive Manufacturing Lead at BG Technology**, where I design and 3D print mechanical parts for students and companies.
 
 I believe in discipline and consistent improvement. I dedicate **12+ hours daily to project development** and **2–4 hours to learning robotics and engineering technologies**.
- - I dont claim To be the  Smartest Personn in the Room, But I try to be Hardest working person. I known i can't Put daily that much hours but it consistent hours can be lower or High but its productive Hours
+ - I dont claim To be the  Smartest Person in the Room, But I try to be Hardest working person. I known,i can't put daily that much hours but it consistent hours can be lower or High but its productive Hours
    
 ---
 

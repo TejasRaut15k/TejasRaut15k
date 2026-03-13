@@ -11,7 +11,7 @@ I also work as **Additive Manufacturing Lead at BG Technology**, where I design 
 
 I believe in discipline and consistent improvement. I dedicate **12+ hours daily to project development** and **2–4 hours to learning robotics and engineering technologies**.
 
-- You may Think there is no one who as a student put this much hour, I genuinely Put that much Hour improvement.
+-I don’t claim to be the smartest person in the room, but I try to be one of the hardest working. Most days I spend **12+ hours building projects and working on engineering ideas**, and another **2–4 hours learning new technologies to improve myself .**
 ---
 
 ## Technical Interests

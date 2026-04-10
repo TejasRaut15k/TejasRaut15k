@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hey, I'm Tejas 👋
+# Hey, I'm Tejas Pravin Raut 👋
 
 ### Robotics & Automation Engineer
 

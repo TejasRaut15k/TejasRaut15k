@@ -9,7 +9,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TejasRaut15k)
 
 **B.Tech Automation & Robotics** · JSPM RSCOE, Pune  
-**Additive Manufacturing Lead** · BG Technology  
+**Additive Manufacturing Lead** · BVNAB   Technology  
 **Team Cipher** · DD ROBOCON India
 
 </div>

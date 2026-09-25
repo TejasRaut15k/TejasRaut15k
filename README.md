@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Hi,%20I'm%20Tejas%20Pravin%20Raut%20👋&fontSize=50&fontAlignY=35&animation=twinkling" />
-  
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Robotics+%26+Automation+Engineer;Embedded+Systems+Developer;Additive+Manufacturing+Lead;Industry-Grade+Product+Designer" alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=0A66C2&center=true&vCenter=true&width=800&lines=Hi,+I'm+Tejas+Pravin+Raut+👋;Robotics+%26+Automation+Engineer;Embedded+Systems+Developer;Additive+Manufacturing+Lead;Industry-Grade+Product+Designer" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -87,4 +83,16 @@ I'm a passionate robotics engineering student who believes in building things, n
 
 **Let's build something awesome together 🚀**
 
+</div>
+
+---
+
+## 🐍 Contribution Graph
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/dist/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/dist/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/dist/github-contribution-grid-snake.svg">
+  </picture>
 </div>

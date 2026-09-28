@@ -51,7 +51,7 @@ I'm a passionate robotics engineering student who believes in building things, n
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TejasRaut15k&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Tejas's GitHub stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TejasRaut15k&theme=tokyonight" alt="Tejas's GitHub statistics" />
   <img src="https://streak-stats.demolab.com/?user=TejasRaut15k&theme=tokyonight&hide_border=true&background=0D1117" alt="Tejas's GitHub streak" />
 </div>
 

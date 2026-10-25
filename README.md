@@ -49,8 +49,6 @@
   <a href="https://github.com/TejasRaut15k" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/></a>
   &nbsp;
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tejas.p.raut15@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Direct_Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Gmail Badge"/></a>
-  &nbsp;
-  <a href="mailto:tejas.p.raut15@gmail.com"><img src="https://img.shields.io/badge/Default_Mail_App-334155?style=for-the-badge&logo=maildotru&logoColor=white" alt="Mail Client Badge"/></a>
 </div>
 </div>
 

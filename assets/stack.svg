@@ -72,12 +72,12 @@
     </pattern>
 
     <!-- Elliptical Orbit Paths for SMIL animateMotion -->
-    <!-- Center (430, 134). Orbit 1: rx=130, ry=36, tilted -14 deg -->
-    <!-- Orbit 2: rx=206, ry=50, tilted +15 deg -->
-    <!-- Orbit 3: rx=278, ry=62, tilted -7 deg -->
-    <path id="stack-path-orbit1" d="M 300,134 a 130,36 0 1,0 260,0 a 130,36 0 1,0 -260,0" fill="none"/>
-    <path id="stack-path-orbit2" d="M 224,134 a 206,50 0 1,0 412,0 a 206,50 0 1,0 -412,0" fill="none"/>
-    <path id="stack-path-orbit3" d="M 152,134 a 278,62 0 1,0 556,0 a 278,62 0 1,0 -556,0" fill="none"/>
+    <!-- Center (430, 142). Orbit 1: rx=120, ry=30, tilted -8 deg -->
+    <!-- Orbit 2: rx=190, ry=42, tilted +8 deg -->
+    <!-- Orbit 3: rx=258, ry=52, tilted -5 deg -->
+    <path id="stack-path-orbit1" d="M 310,142 a 120,30 0 1,0 240,0 a 120,30 0 1,0 -240,0" fill="none"/>
+    <path id="stack-path-orbit2" d="M 240,142 a 190,42 0 1,0 380,0 a 190,42 0 1,0 -380,0" fill="none"/>
+    <path id="stack-path-orbit3" d="M 172,142 a 258,52 0 1,0 516,0 a 258,52 0 1,0 -516,0" fill="none"/>
   </defs>
 
   <!-- Container Box -->
@@ -87,139 +87,147 @@
 
   <!-- Top Title Row -->
   <g transform="translate(40, 28)">
-    <rect x="0" y="0" width="138" height="22" rx="5" fill="#0e1a34" stroke="#247bff" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="10" y="15" fill="#38bdf8" font-size="11" class="stack-mono">// TECHNICAL ARSENAL</text>
+    <rect x="0" y="0" width="148" height="22" rx="5" fill="#0e1a34" stroke="#247bff" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="10" y="15" fill="#38bdf8" font-size="10.5" class="stack-mono">// TECHNICAL ARSENAL</text>
 
-    <text x="150" y="17" fill="#f0f6fc" font-size="17" class="stack-display">TILTED ELLIPTICAL ORBITS &amp; STACK CHIPS</text>
-    <text x="600" y="16" fill="#94a3b8" font-size="11.5" class="stack-mono">Multi-Domain Robotics Stack</text>
+    <text x="164" y="17" fill="#f0f6fc" font-size="16.5" class="stack-display">TILTED ELLIPTICAL ORBITS &amp; STACK CHIPS</text>
+    <text x="780" y="16" text-anchor="end" fill="#94a3b8" font-size="11" class="stack-mono">Multi-Domain Robotics Stack</text>
   </g>
 
   <!-- ================= THREE TILTED ELLIPTICAL ORBITS ================= -->
   <g id="stack-planetary-system">
     <!-- Ambient Core Glow -->
-    <circle cx="430" cy="134" r="126" fill="url(#stack-core-glow)"/>
+    <circle cx="430" cy="142" r="126" fill="url(#stack-core-glow)"/>
 
-    <!-- ORBIT 3 (Outer, tilted -7 deg): rx=278, ry=62 -->
-    <g transform="rotate(-7 430 134)">
-      <ellipse cx="430" cy="134" rx="278" ry="62" fill="none" stroke="url(#stack-orbit-grad3)" stroke-width="1.2" stroke-dasharray="4,6" opacity="0.55"/>
+    <!-- ORBIT 3 (Outer, tilted -5 deg): rx=258, ry=52 -->
+    <g transform="rotate(-5 430 142)">
+      <ellipse cx="430" cy="142" rx="258" ry="52" fill="none" stroke="url(#stack-orbit-grad3)" stroke-width="1.2" stroke-dasharray="4,6" opacity="0.55"/>
 
-      <!-- Node 1: ESP32 -->
+      <!-- Node 1: ESP32 (Phase ~0.00) -->
       <g>
-        <rect x="-38" y="-13" width="76" height="26" rx="6" fill="#091424" stroke="#00e676" stroke-width="1"/>
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm-1 2v4H7v2h4v4h2v-4h4v-2h-4V7h-2z" fill="#00e676" transform="translate(-30, -7) scale(0.62)"/>
-        <text x="-10" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">ESP32</text>
-        <animateMotion dur="28s" repeatCount="indefinite">
+        <rect x="-42" y="-13" width="84" height="26" rx="6" fill="#091424" stroke="#00e676" stroke-width="1"/>
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm-1 2v4H7v2h4v4h2v-4h4v-2h-4V7h-2z" fill="#00e676" transform="translate(-34, -7) scale(0.62)"/>
+        <text x="-12" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">ESP32</text>
+        <animateMotion dur="28s" begin="0s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit3"/>
         </animateMotion>
       </g>
 
-      <!-- Node 2: Python -->
+      <!-- Node 2: Python (Phase ~0.30) -->
       <g>
-        <rect x="-38" y="-13" width="76" height="26" rx="6" fill="#091424" stroke="#38bdf8" stroke-width="1"/>
-        <path d="M11.914 0C5.82 0 6.2 2.65 6.2 2.65l.006 2.744h5.814v.826H3.896s-3.896.44-3.896 5.86c0 5.42 3.402 5.228 3.402 5.228h2.032v-2.868s-.11-3.418 3.35-3.418h5.753s3.238.052 3.238-3.125V2.65S18.256 0 11.914 0zM8.59 1.654a1.045 1.045 0 1 1 0 2.09 1.045 1.045 0 0 1 0-2.09zm3.496 22.346c6.094 0 5.714-2.65 5.714-2.65l-.006-2.744h-5.814v-.826h8.124s3.896-.44 3.896-5.86c0-5.42-3.402-5.228-3.402-5.228h-2.032v2.868s.11 3.418-3.35 3.418H9.477s-3.238-.052-3.238 3.125v5.244s-.476 2.65 5.847 2.65zm3.324-1.654a1.045 1.045 0 1 1 0-2.09 1.045 1.045 0 0 1 0 2.09z" fill="#38bdf8" transform="translate(-30, -7) scale(0.62)"/>
-        <text x="-10" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Python</text>
-        <animateMotion dur="28s" begin="-7s" repeatCount="indefinite">
+        <rect x="-42" y="-13" width="84" height="26" rx="6" fill="#091424" stroke="#38bdf8" stroke-width="1"/>
+        <path d="M11.914 0C5.82 0 6.2 2.65 6.2 2.65l.006 2.744h5.814v.826H3.896s-3.896.44-3.896 5.86c0 5.42 3.402 5.228 3.402 5.228h2.032v-2.868s-.11-3.418 3.35-3.418h5.753s3.238.052 3.238-3.125V2.65S18.256 0 11.914 0zM8.59 1.654a1.045 1.045 0 1 1 0 2.09 1.045 1.045 0 0 1 0-2.09zm3.496 22.346c6.094 0 5.714-2.65 5.714-2.65l-.006-2.744h-5.814v-.826h8.124s3.896-.44 3.896-5.86c0-5.42-3.402-5.228-3.402-5.228h-2.032v2.868s.11 3.418-3.35 3.418H9.477s-3.238-.052-3.238 3.125v5.244s-.476 2.65 5.847 2.65zm3.324-1.654a1.045 1.045 0 1 1 0-2.09 1.045 1.045 0 0 1 0 2.09z" fill="#38bdf8" transform="translate(-34, -7) scale(0.62)"/>
+        <text x="-12" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Python</text>
+        <animateMotion dur="28s" begin="-8.4s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit3"/>
         </animateMotion>
       </g>
 
-      <!-- Node 3: C++ -->
+      <!-- Node 3: C++ (Phase ~0.65) -->
       <g>
-        <rect x="-34" y="-13" width="68" height="26" rx="6" fill="#091424" stroke="#60a5fa" stroke-width="1"/>
-        <path d="M22.395 14.523l-1.92-1.109a6.002 6.002 0 0 0 .004-2.828l1.92-1.109a8.212 8.212 0 0 1-.004 5.046zm-4.398 5.626l-1.92-1.109a5.987 5.987 0 0 0 2.45-1.413l1.92 1.109a8.196 8.196 0 0 1-2.45 1.413zm-5.997 2.351v-2.217a5.975 5.975 0 0 0 2.828-.004v2.217a8.183 8.183 0 0 1-2.828.004zM6.003 20.15l1.92-1.109a5.99 5.99 0 0 0 2.45 1.413l-1.92 1.109a8.2 8.2 0 0 1-2.45-1.413zM1.605 14.523A8.212 8.212 0 0 1 1.6 9.477l1.92 1.109a6.002 6.002 0 0 0 .005 2.828l-1.92 1.109zm4.398-5.626L4.083 7.788A8.196 8.196 0 0 1 6.533 6.375l1.92 1.109a5.987 5.987 0 0 0-2.45 1.413zm5.997-2.351V4.33a8.183 8.183 0 0 1 2.828-.004v2.217a5.975 5.975 0 0 0-2.828.004zm5.997 2.351l1.92-1.109a8.2 8.2 0 0 1 2.45 1.413l-1.92 1.109a5.99 5.99 0 0 0-2.45-1.413zM12 7.75a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5zm3.5 3.5h-1.5v-1.5h-1v1.5H11.5v1H13v1.5h1v-1.5h1.5v-1zm4.5 0h-1.5v-1.5h-1v1.5H16v1h1.5v1.5h1v-1.5H20v-1z" fill="#60a5fa" transform="translate(-26, -7) scale(0.62)"/>
-        <text x="-8" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">C++</text>
-        <animateMotion dur="28s" begin="-14s" repeatCount="indefinite">
+        <rect x="-37" y="-13" width="74" height="26" rx="6" fill="#091424" stroke="#60a5fa" stroke-width="1"/>
+        <path d="M22.395 14.523l-1.92-1.109a6.002 6.002 0 0 0 .004-2.828l1.92-1.109a8.212 8.212 0 0 1-.004 5.046zm-4.398 5.626l-1.92-1.109a5.987 5.987 0 0 0 2.45-1.413l1.92 1.109a8.196 8.196 0 0 1-2.45 1.413zm-5.997 2.351v-2.217a5.975 5.975 0 0 0 2.828-.004v2.217a8.183 8.183 0 0 1-2.828.004zM6.003 20.15l1.92-1.109a5.99 5.99 0 0 0 2.45 1.413l-1.92 1.109a8.2 8.2 0 0 1-2.45-1.413zM1.605 14.523A8.212 8.212 0 0 1 1.6 9.477l1.92 1.109a6.002 6.002 0 0 0 .005 2.828l-1.92 1.109zm4.398-5.626L4.083 7.788A8.196 8.196 0 0 1 6.533 6.375l1.92 1.109a5.987 5.987 0 0 0-2.45 1.413zm5.997-2.351V4.33a8.183 8.183 0 0 1 2.828-.004v2.217a5.975 5.975 0 0 0-2.828.004zm5.997 2.351l1.92-1.109a8.2 8.2 0 0 1 2.45 1.413l-1.92 1.109a5.99 5.99 0 0 0-2.45-1.413zM12 7.75a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5zm3.5 3.5h-1.5v-1.5h-1v1.5H11.5v1H13v1.5h1v-1.5h1.5v-1zm4.5 0h-1.5v-1.5h-1v1.5H16v1h1.5v1.5h1v-1.5H20v-1z" fill="#60a5fa" transform="translate(-29, -7) scale(0.62)"/>
+        <text x="-9" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">C++</text>
+        <animateMotion dur="28s" begin="-18.2s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit3"/>
         </animateMotion>
       </g>
 
-      <!-- Node 4: Arduino -->
+      <!-- Node 4: Arduino (Phase ~0.95) -->
       <g>
-        <rect x="-42" y="-13" width="84" height="26" rx="6" fill="#091424" stroke="#2dd4bf" stroke-width="1"/>
-        <path d="M19.5 7.5A6.5 6.5 0 0 0 13 12.01 6.5 6.5 0 0 0 4.5 7.5 6.5 6.5 0 1 0 11 14.01 6.5 6.5 0 0 0 19.5 18.5a6.5 6.5 0 0 0 0-11zm-15 7A4.5 4.5 0 1 1 9 10.01 4.5 4.5 0 0 1 4.5 14.5zm15 0a4.5 4.5 0 1 1 4.5-4.49 4.5 4.5 0 0 1-4.5 4.49zM3 9.5h3v1H3zm15-1h1v1h-1zm-1 1h3v1h-3zm1 1h1v1h-1z" fill="#2dd4bf" transform="translate(-34, -7) scale(0.62)"/>
-        <text x="-14" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Arduino</text>
-        <animateMotion dur="28s" begin="-21s" repeatCount="indefinite">
+        <rect x="-46" y="-13" width="92" height="26" rx="6" fill="#091424" stroke="#2dd4bf" stroke-width="1"/>
+        <path d="M19.5 7.5A6.5 6.5 0 0 0 13 12.01 6.5 6.5 0 0 0 4.5 7.5 6.5 6.5 0 1 0 11 14.01 6.5 6.5 0 0 0 19.5 18.5a6.5 6.5 0 0 0 0-11zm-15 7A4.5 4.5 0 1 1 9 10.01 4.5 4.5 0 0 1 4.5 14.5zm15 0a4.5 4.5 0 1 1 4.5-4.49 4.5 4.5 0 0 1-4.5 4.49zM3 9.5h3v1H3zm15-1h1v1h-1zm-1 1h3v1h-3zm1 1h1v1h-1z" fill="#2dd4bf" transform="translate(-38, -7) scale(0.62)"/>
+        <text x="-16" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Arduino</text>
+        <animateMotion dur="28s" begin="-26.6s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit3"/>
         </animateMotion>
       </g>
     </g>
 
-    <!-- ORBIT 2 (Middle, tilted +15 deg): rx=206, ry=50 -->
-    <g transform="rotate(15 430 134)">
-      <ellipse cx="430" cy="134" rx="206" ry="50" fill="none" stroke="url(#stack-orbit-grad2)" stroke-width="1.3" stroke-dasharray="5,6" opacity="0.65"/>
+    <!-- ORBIT 2 (Middle, tilted +8 deg): rx=190, ry=42 -->
+    <g transform="rotate(8 430 142)">
+      <ellipse cx="430" cy="142" rx="190" ry="42" fill="none" stroke="url(#stack-orbit-grad2)" stroke-width="1.3" stroke-dasharray="5,6" opacity="0.65"/>
 
-      <!-- Node 1: Fusion 360 -->
+      <!-- Node 1: Fusion 360 (Phase ~0.10) -->
       <g>
-        <rect x="-46" y="-13" width="92" height="26" rx="6" fill="#180b18" stroke="#ff354f" stroke-width="1"/>
-        <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#ff354f" transform="translate(-38, -7) scale(0.62)"/>
-        <text x="-16" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">Fusion 360</text>
-        <animateMotion dur="22s" repeatCount="indefinite">
+        <rect x="-53" y="-13" width="106" height="26" rx="6" fill="#180b18" stroke="#ff354f" stroke-width="1"/>
+        <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#ff354f" transform="translate(-45, -7) scale(0.62)"/>
+        <text x="-21" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">Fusion 360</text>
+        <animateMotion dur="22s" begin="-2.2s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit2"/>
         </animateMotion>
       </g>
 
-      <!-- Node 2: SolidWorks -->
+      <!-- Node 2: SolidWorks (Phase ~0.45) -->
       <g>
-        <rect x="-46" y="-13" width="92" height="26" rx="6" fill="#180b18" stroke="#f43f5e" stroke-width="1"/>
-        <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#f43f5e" transform="translate(-38, -7) scale(0.62)"/>
-        <text x="-16" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">SolidWorks</text>
-        <animateMotion dur="22s" begin="-7.33s" repeatCount="indefinite">
+        <rect x="-53" y="-13" width="106" height="26" rx="6" fill="#180b18" stroke="#f43f5e" stroke-width="1"/>
+        <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#f43f5e" transform="translate(-45, -7) scale(0.62)"/>
+        <text x="-21" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">SolidWorks</text>
+        <animateMotion dur="22s" begin="-9.9s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit2"/>
         </animateMotion>
       </g>
 
-      <!-- Node 3: 3D Printing -->
+      <!-- Node 3: 3D Printing (Phase ~0.75) -->
       <g>
-        <rect x="-48" y="-13" width="96" height="26" rx="6" fill="#180b18" stroke="#fb7185" stroke-width="1"/>
-        <path d="M12 2L4 6v12l8 4 8-4V6l-8-4zm0 2.2l6 3v4.5l-6-3v-4.5zM6 7.2l5 2.5v4.5l-5-2.5V7.2zM12 20l-6-3v-4.5l6 3V20zm6-3l-5 2.5v-4.5l5-2.5V17z" fill="#fb7185" transform="translate(-40, -7) scale(0.62)"/>
-        <text x="-18" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">3D Printing</text>
-        <animateMotion dur="22s" begin="-14.66s" repeatCount="indefinite">
+        <rect x="-55" y="-13" width="110" height="26" rx="6" fill="#180b18" stroke="#fb7185" stroke-width="1"/>
+        <path d="M12 2L4 6v12l8 4 8-4V6l-8-4zm0 2.2l6 3v4.5l-6-3v-4.5zM6 7.2l5 2.5v4.5l-5-2.5V7.2zM12 20l-6-3v-4.5l6 3V20zm6-3l-5 2.5v-4.5l5-2.5V17z" fill="#fb7185" transform="translate(-47, -7) scale(0.62)"/>
+        <text x="-23" y="4" fill="#f1f5f9" font-size="9.5" class="stack-mono">3D Printing</text>
+        <animateMotion dur="22s" begin="-16.5s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit2"/>
         </animateMotion>
       </g>
     </g>
 
-    <!-- ORBIT 1 (Inner, tilted -14 deg): rx=130, ry=36 -->
-    <g transform="rotate(-14 430 134)">
-      <ellipse cx="430" cy="134" rx="130" ry="36" fill="none" stroke="url(#stack-orbit-grad1)" stroke-width="1.4" stroke-dasharray="3,5" opacity="0.8"/>
+    <!-- ORBIT 1 (Inner, tilted -8 deg): rx=120, ry=30 -->
+    <g transform="rotate(-8 430 142)">
+      <ellipse cx="430" cy="142" rx="120" ry="30" fill="none" stroke="url(#stack-orbit-grad1)" stroke-width="1.4" stroke-dasharray="3,5" opacity="0.8"/>
 
-      <!-- Node 1: ROS2 -->
+      <!-- Node 1: ROS2 (Phase ~0.20) -->
       <g>
-        <rect x="-36" y="-12" width="72" height="24" rx="5" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
-        <path d="M12 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM2 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm20 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#247bff" transform="translate(-28, -7) scale(0.62)"/>
-        <text x="-8" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">ROS2</text>
-        <animateMotion dur="16s" repeatCount="indefinite">
+        <rect x="-39" y="-12" width="78" height="24" rx="5" fill="#0d1b38" stroke="#247bff" stroke-width="1"/>
+        <path d="M12 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM2 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm20 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#247bff" transform="translate(-31, -7) scale(0.62)"/>
+        <text x="-9" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">ROS2</text>
+        <animateMotion dur="16s" begin="-3.2s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit1"/>
         </animateMotion>
       </g>
 
-      <!-- Node 2: Gazebo -->
+      <!-- Node 2: Gazebo (Phase ~0.55) -->
       <g>
-        <rect x="-38" y="-12" width="76" height="24" rx="5" fill="#0d1b38" stroke="#38bdf8" stroke-width="1"/>
-        <path d="M12 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM2 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm20 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#38bdf8" transform="translate(-30, -7) scale(0.62)"/>
-        <text x="-10" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Gazebo</text>
-        <animateMotion dur="16s" begin="-5.33s" repeatCount="indefinite">
+        <rect x="-41" y="-12" width="82" height="24" rx="5" fill="#0d1b38" stroke="#38bdf8" stroke-width="1"/>
+        <path d="M12 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM2 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm20 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM5 19a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#38bdf8" transform="translate(-33, -7) scale(0.62)"/>
+        <text x="-11" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">Gazebo</text>
+        <animateMotion dur="16s" begin="-8.8s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit1"/>
         </animateMotion>
       </g>
 
-      <!-- Node 3: MATLAB -->
+      <!-- Node 3: MATLAB (Phase ~0.85) -->
       <g>
-        <rect x="-38" y="-12" width="76" height="24" rx="5" fill="#0d1b38" stroke="#fbbf24" stroke-width="1"/>
-        <path d="M3 14c2-5 5-9 8-9s6 7 8 7 2-3 2-3v8H3v-3z" fill="#fbbf24" transform="translate(-30, -7) scale(0.62)"/>
-        <text x="-10" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">MATLAB</text>
-        <animateMotion dur="16s" begin="-10.66s" repeatCount="indefinite">
+        <rect x="-41" y="-12" width="82" height="24" rx="5" fill="#0d1b38" stroke="#fbbf24" stroke-width="1"/>
+        <path d="M3 14c2-5 5-9 8-9s6 7 8 7 2-3 2-3v8H3v-3z" fill="#fbbf24" transform="translate(-33, -7) scale(0.62)"/>
+        <text x="-11" y="4" fill="#f1f5f9" font-size="10" class="stack-mono">MATLAB</text>
+        <animateMotion dur="16s" begin="-13.6s" repeatCount="indefinite">
           <mpath href="#stack-path-orbit1"/>
         </animateMotion>
       </g>
     </g>
 
-    <!-- Center Nucleus: Automation & Robotics Core -->
-    <g transform="translate(430, 134)">
-      <circle cx="0" cy="0" r="26" fill="#0b162c" stroke="#247bff" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="20" fill="#102246" stroke="#ff354f" stroke-width="1"/>
-      <path d="M-7 -5h14v10h-14zm-3 2h2v4h-2zm16 0h2v4h-2zm-9-5h4v3h-4zm2 15h4v2h-4z" fill="#f0f6fc"/>
-      <text x="0" y="3" text-anchor="middle" fill="#38bdf8" font-size="6" class="stack-mono">CORE</text>
+    <!-- Center Nucleus: Automation & Robotics Core (High-Tech Redesigned Vector) -->
+    <g transform="translate(430, 142)">
+      <!-- Outer rotating dashed ring -->
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#247bff" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.75">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Core Chamber Shell -->
+      <circle cx="0" cy="0" r="22" fill="#091326" stroke="#ff354f" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="16" fill="#0e1f3d" stroke="#38bdf8" stroke-width="1"/>
+      <!-- Microprocessor Die with Gold/Emerald Core -->
+      <rect x="-7" y="-7" width="14" height="14" rx="2" fill="#172b54" stroke="#38bdf8" stroke-width="1.2"/>
+      <rect x="-3" y="-3" width="6" height="6" rx="1" fill="#00e676"/>
+      <!-- Precision Microchip Connector Pins -->
+      <path d="M-5 -9v2 M0 -9v2 M5 -9v2 M-5 7v2 M0 7v2 M5 7v2 M-9 -5h2 M-9 0h2 M-9 5h2 M7 -5h2 M7 0h2 M7 5h2" stroke="#38bdf8" stroke-width="1.1"/>
     </g>
   </g>
 
@@ -283,13 +291,13 @@
       <g transform="translate(14, 46)">
         <!-- Chip 1: Autodesk Fusion 360 -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="112" height="26" rx="6" fill="#200d1e" stroke="#be123c" stroke-width="1"/>
+          <rect x="0" y="0" width="110" height="26" rx="6" fill="#200d1e" stroke="#be123c" stroke-width="1"/>
           <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#ff354f" transform="translate(6, 4) scale(0.7)"/>
           <text x="26" y="17" fill="#e2e8f0" font-size="9.5" class="stack-mono">Fusion 360</text>
         </g>
         <!-- Chip 2: PTC CREO -->
-        <g transform="translate(120, 0)">
-          <rect x="0" y="0" width="102" height="26" rx="6" fill="#200d1e" stroke="#be123c" stroke-width="1"/>
+        <g transform="translate(118, 0)">
+          <rect x="0" y="0" width="104" height="26" rx="6" fill="#200d1e" stroke="#be123c" stroke-width="1"/>
           <path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7 12 3.2 19.5 7 12 10.5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="#f43f5e" transform="translate(6, 4) scale(0.7)"/>
           <text x="26" y="17" fill="#e2e8f0" font-size="9.5" class="stack-mono">PTC CREO</text>
         </g>
@@ -326,6 +334,7 @@
     </g>
 
     <!-- Column 3: Embedded Hardware & Software -->
+    <!-- Updated per user request: Added C# (#C), Removed IMU, Clean Symmetrical Spacing -->
     <g transform="translate(530, 0)">
       <rect x="0" y="0" width="250" height="204" rx="14" ry="14" fill="#07151a" stroke="#00e676" stroke-opacity="0.4" stroke-width="1"/>
       <rect x="14" y="14" width="176" height="20" rx="4" fill="#042f2e"/>
@@ -333,47 +342,58 @@
 
       <!-- Chips -->
       <g transform="translate(14, 46)">
+        <!-- Row 1: ESP32 + Arduino + C++ -->
         <!-- Chip 1: ESP32 -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="84" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <rect x="0" y="0" width="80" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
           <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm-1 2v4H7v2h4v4h2v-4h4v-2h-4V7h-2z" fill="#34d399" transform="translate(6, 4) scale(0.7)"/>
           <text x="24" y="17" fill="#e2e8f0" font-size="10" class="stack-mono">ESP32</text>
         </g>
         <!-- Chip 2: Arduino -->
-        <g transform="translate(92, 0)">
-          <rect x="0" y="0" width="94" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+        <g transform="translate(86, 0)">
+          <rect x="0" y="0" width="84" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
           <path d="M19.5 7.5A6.5 6.5 0 0 0 13 12.01 6.5 6.5 0 0 0 4.5 7.5 6.5 6.5 0 1 0 11 14.01 6.5 6.5 0 0 0 19.5 18.5a6.5 6.5 0 0 0 0-11zm-15 7A4.5 4.5 0 1 1 9 10.01 4.5 4.5 0 0 1 4.5 14.5zm15 0a4.5 4.5 0 1 1 4.5-4.49 4.5 4.5 0 0 1-4.5 4.49zM3 9.5h3v1H3zm15-1h1v1h-1zm-1 1h3v1h-3zm1 1h1v1h-1z" fill="#2dd4bf" transform="translate(6, 4) scale(0.7)"/>
           <text x="26" y="17" fill="#e2e8f0" font-size="10" class="stack-mono">Arduino</text>
         </g>
-        <!-- Chip 3: C/C++ -->
-        <g transform="translate(192, 0)">
-          <rect x="0" y="0" width="30" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
-          <text x="5" y="17" fill="#60a5fa" font-size="10" class="stack-mono">C++</text>
+        <!-- Chip 3: C++ -->
+        <g transform="translate(176, 0)">
+          <rect x="0" y="0" width="46" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <text x="23" y="17" text-anchor="middle" fill="#60a5fa" font-size="10" class="stack-mono">C++</text>
         </g>
-        <!-- Chip 4: Python -->
+
+        <!-- Row 2: C# + Python + WebSocket -->
+        <!-- Chip 4: C# (Added per user request) -->
         <g transform="translate(0, 34)">
-          <rect x="0" y="0" width="88" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <rect x="0" y="0" width="46" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <text x="23" y="17" text-anchor="middle" fill="#a78bfa" font-size="10" class="stack-mono">C#</text>
+        </g>
+        <!-- Chip 5: Python -->
+        <g transform="translate(52, 34)">
+          <rect x="0" y="0" width="76" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
           <path d="M11.914 0C5.82 0 6.2 2.65 6.2 2.65l.006 2.744h5.814v.826H3.896s-3.896.44-3.896 5.86c0 5.42 3.402 5.228 3.402 5.228h2.032v-2.868s-.11-3.418 3.35-3.418h5.753s3.238.052 3.238-3.125V2.65S18.256 0 11.914 0zM8.59 1.654a1.045 1.045 0 1 1 0 2.09 1.045 1.045 0 0 1 0-2.09zm3.496 22.346c6.094 0 5.714-2.65 5.714-2.65l-.006-2.744h-5.814v-.826h8.124s3.896-.44 3.896-5.86c0-5.42-3.402-5.228-3.402-5.228h-2.032v2.868s.11 3.418-3.35 3.418H9.477s-3.238-.052-3.238 3.125v5.244s-.476 2.65 5.847 2.65zm3.324-1.654a1.045 1.045 0 1 1 0-2.09 1.045 1.045 0 0 1 0 2.09z" fill="#38bdf8" transform="translate(6, 4) scale(0.7)"/>
           <text x="24" y="17" fill="#e2e8f0" font-size="10" class="stack-mono">Python</text>
         </g>
-        <!-- Chip 5: WebSocket UI -->
-        <g transform="translate(96, 34)">
-          <rect x="0" y="0" width="126" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+        <!-- Chip 6: WebSocket UI -->
+        <g transform="translate(134, 34)">
+          <rect x="0" y="0" width="88" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
           <path d="M4 12a8 8 0 0 1 14.9-4M20 12a8 8 0 0 1-14.9 4M19 4v4h-4M5 20v-4h4" fill="#34d399" transform="translate(6, 4) scale(0.7)"/>
-          <text x="26" y="17" fill="#e2e8f0" font-size="10" class="stack-mono">WebSocket UI</text>
+          <text x="24" y="17" fill="#e2e8f0" font-size="9.5" class="stack-mono">WebSocket</text>
         </g>
-        <!-- Chip 6: Linux Ubuntu -->
+
+        <!-- Row 3: Linux + Sonar Radar (IMU removed) -->
+        <!-- Chip 7: Linux Ubuntu -->
         <g transform="translate(0, 68)">
-          <rect x="0" y="0" width="124" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <rect x="0" y="0" width="118" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
           <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.2.5 2.3 1.3 3.1-.8 1.1-1.3 2.5-1.3 4 0 2.2 1 4.2 2.6 5.5-1.5.5-2.6 1.8-2.6 3.4 0 .3.2.5.5.5h16c.3 0 .5-.2.5-.5 0-1.6-1.1-2.9-2.6-3.4 1.6-1.3 2.6-3.3 2.6-5.5 0-1.5-.5-2.9-1.3-4 .8-.8 1.3-1.9 1.3-3.1C24.5 4 22.5 2 20 2c-1.3 0-2.4.5-3.2 1.4-.8-.9-1.9-1.4-3.2-1.4H12z" fill="#fbbf24" transform="translate(6, 4) scale(0.7)"/>
           <text x="26" y="17" fill="#e2e8f0" font-size="10" class="stack-mono">Linux (Ubuntu)</text>
         </g>
-        <!-- Chip 7: Ultrasonic -->
-        <g transform="translate(132, 68)">
-          <rect x="0" y="0" width="90" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
-          <text x="8" y="17" fill="#e2e8f0" font-size="9.5" class="stack-mono">Sonar/IMU</text>
+        <!-- Chip 8: Sonar Radar (IMU removed) -->
+        <g transform="translate(124, 68)">
+          <rect x="0" y="0" width="98" height="26" rx="6" fill="#0c2328" stroke="#0f766e" stroke-width="1"/>
+          <text x="49" y="17" text-anchor="middle" fill="#e2e8f0" font-size="10" class="stack-mono">Sonar Radar</text>
         </g>
-        <!-- Chip 8: Detail -->
+
+        <!-- Row 4: Detail -->
         <g transform="translate(0, 102)">
           <rect x="0" y="0" width="222" height="24" rx="5" fill="#071b1f"/>
           <text x="10" y="16" fill="#94a3b8" font-size="9.5" class="stack-mono">Telemetry Streams &#8226; Hardware Bringup</text>

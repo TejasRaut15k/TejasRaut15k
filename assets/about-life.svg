@@ -79,68 +79,68 @@
   <g transform="translate(40, 36)">
     <!-- Accent Pill -->
     <rect x="0" y="0" width="168" height="22" rx="5" fill="#0e1a34" stroke="#247bff" stroke-opacity="0.5" stroke-width="1"/>
-    <text x="10" y="15" fill="#38bdf8" font-size="11" class="about-mono">// ENGINEERING PILLARS</text>
+    <text x="10" y="15" fill="#38bdf8" font-size="10.5" class="about-mono">// ENGINEERING PILLARS</text>
 
-    <!-- Title and Subtitle -->
-    <text x="180" y="17" fill="#f0f6fc" font-size="18" class="about-display">CORE CAPABILITIES &amp; LIFE PURSUITS</text>
-    <text x="560" y="16" fill="#94a3b8" font-size="12" class="about-mono">12+ Hours Daily Product R&amp;D</text>
+    <!-- Title and Subtitle (Removed 12+ Hours as requested) -->
+    <text x="184" y="17" fill="#f0f6fc" font-size="17" class="about-display">CORE CAPABILITIES &amp; LIFE PURSUITS</text>
+    <text x="780" y="16" text-anchor="end" fill="#94a3b8" font-size="11" class="about-mono">Multi-Domain Engineering &amp; Robotics</text>
   </g>
 
   <!-- ================= LEFT COLUMN: CAPABILITIES (4 CARDS) ================= -->
   <g transform="translate(40, 78)">
     <!-- Header -->
-    <text x="0" y="0" fill="#93c5fd" font-size="12" class="about-mono" letter-spacing="1">TECHNICAL CAPABILITIES</text>
+    <text x="0" y="0" fill="#93c5fd" font-size="11" class="about-mono" letter-spacing="1">TECHNICAL CAPABILITIES</text>
 
     <!-- Card 1: Rapid Prototyping & Additive Mfg -->
     <g transform="translate(0, 12)">
-      <rect x="0" y="0" width="370" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
+      <rect x="0" y="0" width="376" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
       <circle cx="24" cy="24" r="14" fill="#132347"/>
       <!-- 3D Cube / Nozzle -->
       <path d="M24 16l8 4.5v9L24 34l-8-4.5v-9zM24 17.5l-6.5 3.7 6.5 3.8 6.5-3.8z" fill="#ff354f"/>
-      <text x="46" y="22" fill="#f1f5f9" font-size="13" class="about-display">Additive Mfg &amp; Rapid Prototyping</text>
-      <rect x="296" y="10" width="64" height="18" rx="4" fill="#1e293b"/>
-      <text x="303" y="22" fill="#38bdf8" font-size="9.5" class="about-mono">BVNAB LEAD</text>
-      <text x="46" y="39" fill="#94a3b8" font-size="10.5" class="about-mono">FDM/SLA 3D printing &#8226; Sheet-metal design &#8226; BOM planning</text>
-      <text x="46" y="54" fill="#64748b" font-size="9.5" class="about-mono">Custom Testing Kits &#8226; PoC to Hardware Prototype</text>
+      <text x="46" y="22" fill="#f1f5f9" font-size="12.5" class="about-display">Additive Mfg &amp; Prototyping</text>
+      <rect x="298" y="10" width="66" height="18" rx="4" fill="#1e293b"/>
+      <text x="306" y="22" fill="#38bdf8" font-size="9.5" class="about-mono">BVNAB LEAD</text>
+      <text x="46" y="39" fill="#94a3b8" font-size="9.5" class="about-mono">FDM/SLA 3D printing &#8226; Sheet-metal design</text>
+      <text x="46" y="53" fill="#64748b" font-size="9" class="about-mono">BOM planning &#8226; Rapid Prototyping Kits</text>
     </g>
 
     <!-- Card 2: Autonomous Systems & ROS2 -->
     <g transform="translate(0, 86)">
-      <rect x="0" y="0" width="370" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
+      <rect x="0" y="0" width="376" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
       <circle cx="24" cy="24" r="14" fill="#132347"/>
       <!-- Robot Vector -->
       <path d="M20 18h8v7h-8zm-2 2h-2v3h2zm12 0h2v3h-2zm-5-5h2v3h-2zm-3 12h8v2h-8z" fill="#247bff"/>
-      <text x="46" y="22" fill="#f1f5f9" font-size="13" class="about-display">Autonomous Systems &amp; ROS2</text>
-      <rect x="286" y="10" width="74" height="18" rx="4" fill="#1e293b"/>
-      <text x="291" y="22" fill="#fbbf24" font-size="9.5" class="about-mono">DD ROBOCON</text>
-      <text x="46" y="39" fill="#94a3b8" font-size="10.5" class="about-mono">ROS2 Jazzy Jalisco &#8226; Gazebo Harmonic 3D simulation</text>
-      <text x="46" y="54" fill="#64748b" font-size="9.5" class="about-mono">URDF kinematic models &#8226; Differential drive teleoperation</text>
+      <text x="46" y="22" fill="#f1f5f9" font-size="12.5" class="about-display">Autonomous Systems &amp; ROS2</text>
+      <rect x="286" y="10" width="78" height="18" rx="4" fill="#1e293b"/>
+      <text x="292" y="22" fill="#fbbf24" font-size="9.5" class="about-mono">DD ROBOCON</text>
+      <text x="46" y="39" fill="#94a3b8" font-size="9.5" class="about-mono">ROS2 Jazzy &#8226; Gazebo Harmonic 3D simulation</text>
+      <text x="46" y="53" fill="#64748b" font-size="9" class="about-mono">URDF models &#8226; Differential drive teleop</text>
     </g>
 
     <!-- Card 3: Embedded Systems & Telemetry -->
     <g transform="translate(0, 160)">
-      <rect x="0" y="0" width="370" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
+      <rect x="0" y="0" width="376" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
       <circle cx="24" cy="24" r="14" fill="#132347"/>
       <!-- Microchip Vector -->
       <path d="M19 19h10v10H19zm-3 2h2v2h-2zm0 4h2v2h-2zm14-4h2v2h-2zm0 4h2v2h-2zm-8-5h2v2h-2zm4 0h2v2h-2zm-4 13h2v2h-2zm4 0h2v2h-2z" fill="#00e676"/>
-      <text x="46" y="22" fill="#f1f5f9" font-size="13" class="about-display">Embedded Firmware &amp; Telemetry</text>
-      <rect x="288" y="10" width="72" height="18" rx="4" fill="#1e293b"/>
-      <text x="296" y="22" fill="#00e676" font-size="9.5" class="about-mono">HARDWARE</text>
-      <text x="46" y="39" fill="#94a3b8" font-size="10.5" class="about-mono">ESP32 &#8226; Arduino &#8226; WebSocket live data streaming</text>
-      <text x="46" y="54" fill="#64748b" font-size="9.5" class="about-mono">Ultrasonic sensors &#8226; Military CRT dark theme radar UI</text>
+      <text x="46" y="22" fill="#f1f5f9" font-size="12.5" class="about-display">Embedded Firmware &amp; Telemetry</text>
+      <rect x="296" y="10" width="68" height="18" rx="4" fill="#1e293b"/>
+      <text x="303" y="22" fill="#00e676" font-size="9.5" class="about-mono">HARDWARE</text>
+      <text x="46" y="39" fill="#94a3b8" font-size="9.5" class="about-mono">ESP32 &#8226; Arduino &#8226; WebSocket live telemetry</text>
+      <text x="46" y="53" fill="#64748b" font-size="9" class="about-mono">Ultrasonic radar UI &#8226; CRT display theme</text>
     </g>
 
-    <!-- Card 4: CAD & Mechanism Design -->
+    <!-- Card 4: CAD & Mechanism Design (Rephrased per user request) -->
     <g transform="translate(0, 234)">
-      <rect x="0" y="0" width="370" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
+      <rect x="0" y="0" width="376" height="66" rx="12" ry="12" fill="#0a1224" stroke="url(#about-card-border)" stroke-width="1"/>
       <circle cx="24" cy="24" r="14" fill="#132347"/>
       <!-- Caliper / Gear Vector -->
       <path d="M24 16a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z" fill="#f43f5e"/>
-      <text x="46" y="22" fill="#f1f5f9" font-size="13" class="about-display">Parametric CAD &amp; Kinematics</text>
-      <rect x="298" y="10" width="62" height="18" rx="4" fill="#1e293b"/>
-      <text x="306" y="22" fill="#f43f5e" font-size="9.5" class="about-mono">DESIGN</text>
-      <text x="46" y="39" fill="#94a3b8" font-size="10.5" class="about-mono">Autodesk Fusion 360 &#8226; PTC CREO &#8226; SolidWorks</text>
-      <text x="46" y="54" fill="#64748b" font-size="9.5" class="about-mono">Chassis assemblies &#8226; MATLAB Quadrotor PID tuning</text>
+      <text x="46" y="22" fill="#f1f5f9" font-size="12.5" class="about-display">Mechanical CAD &amp; Kinematics</text>
+      <rect x="304" y="10" width="60" height="18" rx="4" fill="#1e293b"/>
+      <text x="312" y="22" fill="#f43f5e" font-size="9.5" class="about-mono">DESIGN</text>
+      <text x="46" y="39" fill="#94a3b8" font-size="9.5" class="about-mono">Autodesk Fusion 360 &#8226; PTC CREO &#8226; SolidWorks</text>
+      <text x="46" y="53" fill="#64748b" font-size="9" class="about-mono">Chassis assemblies &#8226; Quadrotor PID tuning</text>
     </g>
   </g>
 
@@ -153,7 +153,7 @@
     <g transform="translate(20, 28)">
       <text x="0" y="0" fill="#93c5fd" font-size="11.5" class="about-mono">FOCUS IN ACTION</text>
       <!-- Slide Counter indicator -->
-      <text x="238" y="0" fill="#64748b" font-size="11" class="about-mono">
+      <text x="344" y="0" text-anchor="end" fill="#64748b" font-size="11" class="about-mono">
         AUTO-CYCLE (4s)
       </text>
 
@@ -198,24 +198,24 @@
       <text x="10" y="15" fill="#60a5fa" font-size="10.5" class="about-mono">&#9874; COMPETITION ROBOTICS</text>
 
       <!-- Title -->
-      <text x="0" y="44" fill="#f8fafc" font-size="18" class="about-display">Team CiPHER / DD ROBOCON</text>
+      <text x="0" y="44" fill="#f8fafc" font-size="17" class="about-display">Team CiPHER / DD ROBOCON</text>
 
       <!-- Body -->
-      <text x="0" y="68" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        Active robotics engineering contributor preparing
+      <text x="0" y="68" fill="#cbd5e1" font-size="11" class="about-mono">
+        Active contributor to autonomous robotics,
       </text>
-      <text x="0" y="85" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        for DD ROBOCON competitions on ROS2 Jazzy.
+      <text x="0" y="85" fill="#cbd5e1" font-size="11" class="about-mono">
+        preparing for DD ROBOCON on ROS2 Jazzy.
       </text>
 
-      <text x="0" y="112" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Engineered robot chassis assembly &amp; drive integration.
+      <text x="0" y="112" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Robot chassis assembly &amp; drive integration
       </text>
-      <text x="0" y="129" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Designed competition robot subsystems in Fusion 360.
+      <text x="0" y="129" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Competition robot subsystems in Fusion 360
       </text>
-      <text x="0" y="146" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Live teleop keyboard controls &amp; Gazebo simulations.
+      <text x="0" y="146" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Live teleop keyboard controls &amp; Gazebo sim
       </text>
 
       <!-- Tech Pills -->
@@ -241,24 +241,24 @@
       <text x="10" y="15" fill="#f43f5e" font-size="10.5" class="about-mono">&#9881; HARDWARE PROTOTYPING</text>
 
       <!-- Title -->
-      <text x="0" y="44" fill="#f8fafc" font-size="18" class="about-display">BVNAB Intelligence R&amp;D</text>
+      <text x="0" y="44" fill="#f8fafc" font-size="17" class="about-display">BVNAB Intelligence R&amp;D</text>
 
       <!-- Body -->
-      <text x="0" y="68" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        Leading mechanical R&amp;D, additive manufacturing pipelines,
+      <text x="0" y="68" fill="#cbd5e1" font-size="11" class="about-mono">
+        Leading mechanical R&amp;D, additive pipelines,
       </text>
-      <text x="0" y="85" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        and embedded hardware integration from PoC to build.
+      <text x="0" y="85" fill="#cbd5e1" font-size="11" class="about-mono">
+        and embedded hardware integration.
       </text>
 
-      <text x="0" y="112" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Designed and manufactured Industry-Grade Testing Kits.
+      <text x="0" y="112" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Industry-Grade custom Testing Kits design
       </text>
-      <text x="0" y="129" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Formulated end-to-end Bills of Materials (BOM).
+      <text x="0" y="129" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Formulated end-to-end Bills of Materials
       </text>
-      <text x="0" y="146" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Sheet-metal fabrication, 3D printing farm operation.
+      <text x="0" y="146" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Sheet-metal fabrication &amp; 3D print farm
       </text>
 
       <!-- Tech Pills -->
@@ -284,24 +284,24 @@
       <text x="10" y="15" fill="#34d399" font-size="10.5" class="about-mono">&#9678; TELEMETRY &amp; DYNAMICS</text>
 
       <!-- Title -->
-      <text x="0" y="44" fill="#f8fafc" font-size="18" class="about-display">Sonar Radar &amp; Quadrotor PID</text>
+      <text x="0" y="44" fill="#f8fafc" font-size="17" class="about-display">Sonar Radar &amp; Quadrotor PID</text>
 
       <!-- Body -->
-      <text x="0" y="68" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        Architecting real-time telemetry UIs and dynamic control
+      <text x="0" y="68" fill="#cbd5e1" font-size="11" class="about-mono">
+        Architecting real-time telemetry systems and
       </text>
-      <text x="0" y="85" fill="#cbd5e1" font-size="11.5" class="about-mono">
-        simulators for autonomous airborne and ground robots.
+      <text x="0" y="85" fill="#cbd5e1" font-size="11" class="about-mono">
+        control simulators for autonomous robots.
       </text>
 
-      <text x="0" y="112" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; ESP32 WebSocket radar UI with CRT green phosphor style.
+      <text x="0" y="112" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; ESP32 WebSocket radar UI with CRT styling
       </text>
-      <text x="0" y="129" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; MATLAB Quadrotor Studio with live URDF PID simulation.
+      <text x="0" y="129" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; MATLAB Quadrotor Studio with URDF PID sim
       </text>
-      <text x="0" y="146" fill="#94a3b8" font-size="11" class="about-mono">
-        &#8226; Active object tracking &amp; distance histogram telemetry.
+      <text x="0" y="146" fill="#94a3b8" font-size="10.5" class="about-mono">
+        &#8226; Active tracking &amp; distance telemetry data
       </text>
 
       <!-- Tech Pills -->

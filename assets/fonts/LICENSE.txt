@@ -1,0 +1,25 @@
+# Font Licenses (SIL Open Font License 1.1)
+
+This project embeds WOFF2 subsets of two open-source typefaces:
+
+## 1. Space Grotesk
+- Copyright: (c) 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
+- Designer: Florian Karsten
+- License: SIL Open Font License, Version 1.1 (OFL-1.1)
+- License URL: https://openfontlicense.org/
+
+## 2. JetBrains Mono
+- Copyright: (c) 2020 JetBrains s.r.o. (https://www.jetbrains.com/lp/mono/)
+- Designer: Philipp Nurullin, Konstantin Bulenkov
+- License: SIL Open Font License, Version 1.1 (OFL-1.1)
+- License URL: https://openfontlicense.org/
+
+---
+
+### SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the standard OFL conditions.

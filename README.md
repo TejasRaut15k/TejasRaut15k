@@ -1,98 +1,68 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/main/typing.svg" alt="Hi, I’m Tejas Pravin Raut — robotics and automation engineer" />
-</div>
 
-<div align="center">
+<!-- Hero Section: Typed Greeting, Rising Mask Reveal, Cycling Roles & Portrait -->
+<img src="assets/hero.svg?v=1" alt="Tejas Pravin Raut - Hero Banner" width="100%"/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejasraut2006)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tejas.p.raut15@gmail.com)
+<br/><br/>
+
+<!-- Capabilities & Life Pursuits: Engineering Pillars & Auto-Cycling Carousel -->
+<img src="assets/about-life.svg?v=1" alt="Core Capabilities &amp; Life Pursuits" width="100%"/>
+
+<br/><br/>
+
+<!-- Technical Stack: Three Tilted Elliptical Orbits & Categorized Tech Chips -->
+<img src="assets/stack.svg?v=1" alt="Technical Arsenal &amp; Elliptical Planetary Orbits" width="100%"/>
+
+<br/><br/>
+
+<!-- Verified ID & Metrics Dashboard: Hanging Lanyard with Damped Pendulum Motion -->
+<img src="assets/id-dashboard.svg?v=1" alt="Verified Engineering Credentials &amp; Repositories Dashboard" width="100%"/>
+
+<br/><br/>
+
+<!-- Connect Channels: Interactive Pointing Character & Social Cards -->
+<img src="assets/connect.svg?v=1" alt="Connect &amp; Collaborate Channels" width="100%"/>
+
+<br/>
+
+### 🌐 Direct Interactive Links
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejasraut2006)
+&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TejasRaut15k)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tejas.p.raut15@gmail.com)
+
+*Note: GitHub does not allow hyperlinks inside rendered SVG images; please use the official verified links above.*
 
 </div>
 
 ---
 
-## 🤖 About Me
+## 🚀 Verified Engineering Projects
 
-I'm a passionate robotics engineering student who believes in building things, not just studying them. I spend **12+ hours daily** on product development and dedicate focused time to engineering robust, industry-grade systems.
-
-> *"I don't claim to be the smartest person in the room, but I try to be the hardest working one."*
-
-### 💼 Professional Experience
-
-* **BVNAB Technology (2+ Years & Ongoing)**
-  * Leading Additive Manufacturing and Rapid Prototyping.
-  * Designed and deployed **Industry-Grade Testing Kits**.
-  * Specialized in Sheet Metal design, BOM (Bill of Materials) making, and strategic planning.
-  * Extensively developed Proof of Concepts (POC) taking products from idea to reality.
-  * **Skills:** Team Management, Product Design, Embedded Systems, 3D Printing.
-
-* **Alumni, Team Cipher (DD ROBOCON India)**
-  * Competed in international robotics competitions.
-  * Designed, prototyped, and deployed autonomous robot systems from scratch.
+| Project | Domain | Tech Stack | Highlights & Architecture | Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **[sonar-radar-system](https://github.com/TejasRaut15k/sonar-radar-system)** | Real-Time Telemetry & UI | ESP32, Ultrasonic, WebSocket, JS | Military-grade CRT green phosphor telemetry UI, active object tracking, proximity alerts, and live distance histogram. | `Active` |
+| **[quadrotor-studio](https://github.com/TejasRaut15k/quadrotor-studio)** | UAV Flight Simulation | MATLAB, Simulink, URDF, PID | Interactive MATLAB quadrotor simulator with complete 3D URDF flight viewport, modular dynamics engine, and tuned PID controls. | `Active` |
+| **[Gazebo-jazzy-Simulation-R2](https://github.com/TejasRaut15k/Gazebo-jazzy-Simulation-R2)** | Autonomous Simulation | ROS2 Jazzy, Gazebo Harmonic, URDF | 3D robot simulation environment incorporating differential drive kinematics, URDF model generation, and keyboard teleoperation. | `Active` |
+| **[KARNA-autonomous-robot](https://github.com/TejasRaut15k/KARNA-autonomous-robot)** | Mobile Robotics | C++, Python, Microcontrollers | Autonomous ground robot engineered from chassis assembly to sensor integration for RoboFest Gujarat 5.0. | `Competition` |
+| **[BVNAB Testing Kits](https://github.com/TejasRaut15k)** | Additive Mfg & Hardware | Fusion 360, Sheet Metal, 3D Print | Proprietary testing jigs and sheet metal enclosures from initial Proof-of-Concept (PoC) to final Bill of Materials (BOM). | `Production` |
+| **[Team CiPHER Robot](https://github.com/TejasRaut15k)** | Competition Robotics | ROS2, Gazebo, Fusion 360 | Subsystem mechanical design and kinematics integration for international DD ROBOCON competitions. | `Active` |
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Technical Domain Summary
 
-<div align="center">
-
-| Category | Technologies |
-|----------|-------------|
-| **Core Software & CAD** | ![SolidWorks](https://img.shields.io/badge/SolidWorks-E32213?style=flat-square&logo=dassaultsystemes&logoColor=white) ![Fusion 360](https://img.shields.io/badge/Fusion_360-FF6600?style=flat-square&logo=autodesk&logoColor=white) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white) |
-| **Robotics & Simulation** | ![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat-square&logo=ros&logoColor=white) ![Gazebo](https://img.shields.io/badge/Gazebo-000000?style=flat-square&logo=gazebo&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
-| **Embedded Systems** | ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white) ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white) |
-| **Hardware & Mfg.** | ![3D Printing](https://img.shields.io/badge/3D_Printing-000000?style=flat-square&logo=threedotjs&logoColor=white) ![Sheet Metal](https://img.shields.io/badge/Sheet_Metal-777777?style=flat-square&logo=altiumdesigner&logoColor=white) ![BOM Planning](https://img.shields.io/badge/BOM_Planning-4CAF50?style=flat-square&logo=googlesheets&logoColor=white) |
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TejasRaut15k&theme=tokyonight" alt="Tejas's GitHub statistics" />
-  <img src="https://streak-stats.demolab.com/?user=TejasRaut15k&theme=tokyonight&hide_border=true&background=0D1117" alt="Tejas's GitHub streak" />
-</div>
-
----
-
-## 🚀 Featured Engineering Projects
-
-### 🛡️ [Sonar Radar System](https://github.com/TejasRaut15k/sonar-radar-system)
-> Real-time sonar radar UI for robotics — ESP32 + Ultrasonic Sensor over WebSocket  
-> Military-grade dark theme with CRT effects, object tracking, proximity alerts, and distance histogram.
-
-### 🚁 [Quadrotor Studio](https://github.com/TejasRaut15k/quadrotor-studio)
-> Interactive MATLAB quadrotor simulator with URDF visualization and PID control  
-> 3D flight viewport, keyboard controls, modular dynamics engine.
-
-### 🤖 [e-Yantra 2026: StrataCobot](https://github.com/TejasRaut15k/e-yantra)
-> **Perfect 40/40 Score Controller** for UR7e Robotic Arm waypoint navigation.  
-> OpenCV Ore Detection, Gazebo Simulation, and Singularity Mitigation algorithms.
-
-### ⚙️ Industry-Grade Testing Kits (BVNAB Technology)
-> **Proprietary Hardware**  
-> Designed and prototyped testing jigs and sheet metal enclosures from POC to final BOM.
+```text
+├── AUTOMATION & ROBOTICS : ROS2 Jazzy, Gazebo Harmonic, URDF Kinematics, PID Control
+├── MECHANICAL & CAD      : Autodesk Fusion 360, PTC CREO, SolidWorks, Sheet Metal, Additive Mfg
+├── EMBEDDED & PROTOCOLS  : ESP32 SoC, Arduino, Embedded C/C++, Python, WebSockets, Linux (Ubuntu)
+└── SPECIALIZATIONS       : 3D Printing Farm Workflows, Functional Testing Kits, BOM Optimization
+```
 
 ---
 
 <div align="center">
-
-*Open to collaborations on robotics, embedded systems, product design, and automation projects.*
-
-**Let's build something awesome together 🚀**
-
-</div>
-
----
-
-## 🐍 Contribution Graph
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/github-contribution-grid-snake-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/github-contribution-grid-snake.svg?v=1">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/TejasRaut15k/TejasRaut15k/output/github-contribution-grid-snake.svg?v=1">
-  </picture>
+  <sub>Engineered with precision for <b>Tejas Pravin Raut</b> &bull; B.Tech Automation &amp; Robotics &bull; Pune, Maharashtra, India</sub>
 </div>

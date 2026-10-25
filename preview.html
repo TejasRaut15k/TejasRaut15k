@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas Pravin Raut - GitHub Animated Profile Preview</title>
+  <style>
+    :root {
+      --bg: #070b16;
+      --card-bg: #0d1117;
+      --border: #30363d;
+      --accent-blue: #247bff;
+      --accent-crimson: #ff354f;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --success: #00e676;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    /* Top Control Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    .badge-pill {
+      background: #0f241a;
+      border: 1px solid var(--success);
+      color: var(--success);
+      font-size: 11px;
+      font-family: monospace;
+      padding: 3px 8px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      background: #161b22;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: #21262d;
+      border-color: var(--accent-blue);
+      color: #ffffff;
+    }
+
+    button.active {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 32px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-meta {
+      padding: 14px 20px;
+      background: #161b22;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: monospace;
+      font-size: 12px;
+    }
+
+    .card-meta .filename {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
+    .card-meta .specs {
+      color: var(--text-muted);
+    }
+
+    .svg-viewport {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #070b16;
+    }
+
+    .svg-viewport img,
+    .svg-viewport object {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 860px;
+      border-radius: 20px;
+    }
+
+    /* Reduced motion override */
+    .reduced-motion * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    /* Links row */
+    .links-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      padding: 20px;
+      background: #0d1117;
+      border-top: 1px solid var(--border);
+    }
+
+    .links-row a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+      transition: opacity 0.2s;
+    }
+
+    .links-row a:hover {
+      opacity: 0.85;
+    }
+
+    .btn-linkedin { background: #0077b5; }
+    .btn-github { background: #24292e; border: 1px solid #444c56; }
+    .btn-email { background: #ea4335; }
+
+    /* Verification status summary */
+    .audit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .audit-item {
+      background: #161b22;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .audit-item h4 {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .audit-item p {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Controls -->
+  <header class="top-bar">
+    <div class="brand">
+      <h1>Tejas Pravin Raut &bull; Animated GitHub Profile</h1>
+      <span class="badge-pill">● 0 External Requests &bull; Self-Contained</span>
+    </div>
+    <div class="controls">
+      <button id="btn-animated" class="active" onclick="switchMode('animated')">Live SVG</button>
+      <button id="btn-img" onclick="switchMode('img')">Render as &lt;img&gt;</button>
+      <button id="btn-reduced" onclick="switchMode('reduced')">Reduced Motion</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Audit Summary Grid -->
+    <div class="audit-grid">
+      <div class="audit-item">
+        <h4>Art Direction</h4>
+        <p>Navy #070b16 &bull; Blue #247bff &bull; Crimson #ff354f</p>
+      </div>
+      <div class="audit-item">
+        <h4>Embedded Fonts</h4>
+        <p>Space Grotesk 700 &bull; JetBrains Mono 500 (OFL)</p>
+      </div>
+      <div class="audit-item">
+        <h4>Asset Alpha</h4>
+        <p>id.png &amp; right_pointing.png (Preserved Alpha)</p>
+      </div>
+      <div class="audit-item">
+        <h4>GitHub Compatibility</h4>
+        <p>Relative paths ?v=1 &bull; 0 External Requests</p>
+      </div>
+    </div>
+
+    <!-- 1. Hero Banner -->
+    <section class="section-card" id="card-hero">
+      <div class="card-meta">
+        <span class="filename">assets/hero.svg?v=1</span>
+        <span class="specs">860 &times; 400 &bull; Rising Mask &bull; 4 Cycling Roles</span>
+      </div>
+      <div class="svg-viewport">
+        <img class="svg-target" src="assets/hero.svg?v=1" alt="Hero Banner"/>
+      </div>
+    </section>
+
+    <!-- 2. Capabilities & Carousel -->
+    <section class="section-card" id="card-about">
+      <div class="card-meta">
+        <span class="filename">assets/about-life.svg?v=1</span>
+        <span class="specs">860 &times; 410 &bull; 4 Capabilities &bull; 3-Slide Carousel (4s)</span>
+      </div>
+      <div class="svg-viewport">
+        <img class="svg-target" src="assets/about-life.svg?v=1" alt="About &amp; Life Carousel"/>
+      </div>
+    </section>
+
+    <!-- 3. Technical Stack Planetary Orbits -->
+    <section class="section-card" id="card-stack">
+      <div class="card-meta">
+        <span class="filename">assets/stack.svg?v=1</span>
+        <span class="specs">860 &times; 480 &bull; 3 Tilted Elliptical Orbits &bull; Grouped Chips</span>
+      </div>
+      <div class="svg-viewport">
+        <img class="svg-target" src="assets/stack.svg?v=1" alt="Technical Arsenal"/>
+      </div>
+    </section>
+
+    <!-- 4. Lanyard ID Badge & Metrics Dashboard -->
+    <section class="section-card" id="card-id">
+      <div class="card-meta">
+        <span class="filename">assets/id-dashboard.svg?v=1</span>
+        <span class="specs">860 &times; 460 &bull; Damped Pendulum Swing &bull; Foil Sweep</span>
+      </div>
+      <div class="svg-viewport">
+        <img class="svg-target" src="assets/id-dashboard.svg?v=1" alt="ID Dashboard"/>
+      </div>
+    </section>
+
+    <!-- 5. Connect Channels -->
+    <section class="section-card" id="card-connect">
+      <div class="card-meta">
+        <span class="filename">assets/connect.svg?v=1</span>
+        <span class="specs">860 &times; 380 &bull; Pointing Character &bull; Nudging Arrows</span>
+      </div>
+      <div class="svg-viewport">
+        <img class="svg-target" src="assets/connect.svg?v=1" alt="Connect Section"/>
+      </div>
+      <!-- Clickable Links Fallback Container (below connect section as required) -->
+      <div class="links-row">
+        <a class="btn-linkedin" href="https://www.linkedin.com/in/tejasraut2006" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn Profile
+        </a>
+        <a class="btn-github" href="https://github.com/TejasRaut15k" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub Repos
+        </a>
+        <a class="btn-email" href="mailto:tejas.p.raut15@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          Direct Email
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function switchMode(mode) {
+      document.querySelectorAll('.controls button').forEach(b => b.classList.remove('active'));
+      document.getElementById('btn-' + mode).classList.add('active');
+
+      const body = document.body;
+      if (mode === 'reduced') {
+        body.classList.add('reduced-motion');
+      } else {
+        body.classList.remove('reduced-motion');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -136,14 +136,14 @@
     </a>
 
     <!-- Card 3: Email -->
-    <a href="mailto:tejas.p.raut15@gmail.com" xlink:href="mailto:tejas.p.raut15@gmail.com" class="conn-link">
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tejas.p.raut15@gmail.com" xlink:href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tejas.p.raut15@gmail.com" target="_blank" class="conn-link">
       <g transform="translate(0, 238)">
         <rect x="0" y="0" width="400" height="70" rx="12" ry="12" fill="#0a1224" stroke="url(#conn-card-border)" stroke-width="1.2"/>
         <!-- Gmail Icon Badge -->
         <rect x="14" y="13" width="44" height="44" rx="10" ry="10" fill="#c5221f"/>
         <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="#ffffff" transform="translate(24, 23) scale(0.98)"/>
 
-        <text x="70" y="30" fill="#f8fafc" font-size="14.5" class="conn-display">Direct Email</text>
+        <text x="70" y="30" fill="#f8fafc" font-size="14.5" class="conn-display">Direct Gmail</text>
         <text x="70" y="48" fill="#38bdf8" font-size="11" class="conn-mono">tejas.p.raut15@gmail.com</text>
         <text x="70" y="60" fill="#64748b" font-size="9.5" class="conn-mono">Inquiries &#8226; Prototyping projects &#8226; Engineering roles</text>
 

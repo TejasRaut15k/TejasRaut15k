@@ -20,21 +20,36 @@
 
 <br/><br/>
 
-<!-- Connect Channels: Interactive Pointing Character & Social Cards -->
-<img src="assets/connect.svg?v=1" alt="Connect &amp; Collaborate Channels" width="100%"/>
+<!-- Connect Channels: Pointing Character & Directly Clickable Interactive Social Cards -->
+<table align="center" width="100%">
+  <tr>
+    <td width="46%" align="center" valign="middle">
+      <img src="assets/connect-avatar.svg?v=1" width="100%" alt="Tejas Pravin Raut pointing to social channels"/>
+    </td>
+    <td width="54%" align="center" valign="middle">
+      <img src="assets/connect-header.svg?v=1" width="100%" alt="Direct Contact // Connect &amp; Collaborate"/>
+      <a href="https://www.linkedin.com/in/tejasraut2006" target="_blank">
+        <img src="assets/card-linkedin.svg?v=1" width="100%" alt="LinkedIn - tejasraut2006"/>
+      </a>
+      <a href="https://github.com/TejasRaut15k" target="_blank">
+        <img src="assets/card-github.svg?v=1" width="100%" alt="GitHub - TejasRaut15k"/>
+      </a>
+      <a href="mailto:tejas.p.raut15@gmail.com">
+        <img src="assets/card-email.svg?v=1" width="100%" alt="Direct Email - tejas.p.raut15@gmail.com"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-### 🌐 Direct Interactive Links
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejasraut2006)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TejasRaut15k)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tejas.p.raut15@gmail.com)
-
-*Note: GitHub does not allow hyperlinks inside rendered SVG images; please use the official verified links above.*
-
+<div align="center">
+  <a href="https://www.linkedin.com/in/tejasraut2006" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
+  &nbsp;
+  <a href="https://github.com/TejasRaut15k" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/></a>
+  &nbsp;
+  <a href="mailto:tejas.p.raut15@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/></a>
+</div>
 </div>
 
 ---
